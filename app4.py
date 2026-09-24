@@ -18,9 +18,9 @@ while True:
 
     lis.append({"role":"assistant",
                 "content":ai_response}) 
-for i in lis:
-    if lis["role"]=="user":
-        print("you:",lis["content"])
-    else:
-        print("bot:",lis["content"])
+    for i in lis:
+        if(i["role"]=="user"):
+            print("you:",i["content"])
+        else:
+            print("bot:",i["content"])
     
